@@ -2,28 +2,34 @@
 <html>
 <head>
 	<title>Psychic Game</title>
+	<link href="assets/css/reset.css" rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
-	<header>
-	<img src="assets/images/psychic.jpeg" alt="psychic">
-
+	<header >
+		<h1> Psychic Game </h1>
+		<img src="assets/images/psychic.jpeg" alt="psychic">
 	</header>
 	<div id="gameInfo">
+		<div class="textandboxstyling">
+			<p> Try to guess the letter!</p>
+		</div>
 		<div class="counter">
-				<div id="guess-counter">
+				<div id="guess-counter" class="textandboxstyling" >
 				<p> Guesses remaining: </p>
 				</div>
-				<div id="win-counter">
+				<div id="win-counter" class="textandboxstyling">
 					<p> Wins: </p>
 				</div>
-				<div id="lose-counter">
+				<div id="lose-counter" class="textandboxstyling">
 					<p> loses: </p>
+				</div>
+				<div id="letters-used" class="textandboxstyling">
+					<p> Letters have used: </p>
 				</div>
 		</div>
 	</div>
-	<div id="letters-used">
-		<p> Letters have used: </p>
-	</div>
+
 	<script type="text/javascript" src="assets/javascript/game.js"></script>	
 
 </body>
